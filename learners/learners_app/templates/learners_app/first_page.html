@@ -1,103 +1,199 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Entreprelearners</title>
-  {% load static %}
-  <!--  Bootstrap 5.0-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-  <!--  Bootstrap 5.0-->
-</head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <!--  navbar navbar-dark bg-primary-->
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#"><h2>Entreprelearners</h2></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarScroll">
-      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="worksfor" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Products
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="worksfor">
-            <li><a class="dropdown-item" href="#">Visualised Team Skills</a></li>
-            <li><a class="dropdown-item" href="#">Buils Skills Based Teams</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Skill & Competency Matrix</a></li>
-            <li><a class="dropdown-item" href="#">Certification Tracking</a></li>
-            <li><a class="dropdown-item" href="#">Organizational Chart</a></li>
-            <li><a class="dropdown-item" href="#">Skill Gap Analysis</a></li>
-            <li><a class="dropdown-item" href="#">Team Builder</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="products" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Works For
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="products">
-            <li><a class="dropdown-item" href="#">Teams</a></li>
-            <li><a class="dropdown-item" href="#">Individuals</a></li>
-            <li><a class="dropdown-item" href="#">Team Managers</a></li>
-            <li><a class="dropdown-item" href="#">Sales Directors</a></li>
-            <li><a class="dropdown-item" href="#">C-Level & Leaderships</a></li>
-            <li><a class="dropdown-item" href="#">Events & Hackathons</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Services</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="resources" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Resources
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="resources">
-            <li><a class="dropdown-item" href="#">Blogs</a></li>
-            <li><a class="dropdown-item" href="#">Play Books</a></li>
-            <li><a class="dropdown-item" href="#">Learn & Upskill</a></li>
-            <li><a class="dropdown-item" href="#">Support</a></li>
-            <li><a class="dropdown-item" href="#">Get Started</a></li>
-            <li><a class="dropdown-item" href="#">How To</a></li>
-            <li><a class="dropdown-item" href="#">Whats New</a></li>
-            <li><a class="dropdown-item" href="#">Find Partners</a></li>
-          </ul>
-        </li>
-      </ul>
-      <div>
-        <a href="" class="btn btn-lg btn-outline-dark">Sign Up</a>
-        <a href="{% url 'login_page' %}" class="btn btn-lg btn-outline-primary">Login</a>
-      </div>
-    </div>
-  </div>
-</nav>
-<br>
+{% extends "learners_app/header_2.html" %}
+{% load widget_tweaks %}
+{% block content %}
 <br>
 <div class="container-fluid">
+  <!--  First Block-->
   <div class="row">
-    <div class="col-2"></div>
-    <div class="col-6">
-      <h1>Optimise the skills in your organisation</h1>
-      <h3>and build autonomous high</h3>
-      <h3>performing teams</h3>
-      <h5>MuchSkills is a skills management platform that helps you focus on what matters most, people.</h5>
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h2 style="font-family:verdana; font-size:50px;">Where Employees</h2>
+      <h1 style="font-family:verdana; font-size:50px;"><b>LEARN & GROW</b></h1>
+      <h2 style="font-family:verdana; font-size:50px;">with Purpose</h2>
       <br>
-      <a href="" class="btn btn-lg btn-dark">Sign Up For Free</a>
-      <a href="" class="btn btn-lg btn-outline-dark">Book a demo</a>
+      <h5 style="font-family:verdana; font-size:30px;"><b>ENTREPRELEARNERS</b> is the first hub where employees learn, grow, create & share with purpose, and have an impact on their workplace</h5>
+      <br>
+      <a href="" class="btn btn-outline-warning btn-lg"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Learn More</a>
     </div>
-    <div class="col-3">
-      <img src="/media/img_1.png" class="img-thumbnail">
+    <div class="col-4">
+      <img src="/media/img_11.png" class="img-thumbnail">
+    </div>
+    <div class="col-2"></div>
+  </div>
+  <br>
+  <!--  First Page Break -->
+  <div class="row bg-warning container-fluid p-3">
+    <div class="col-3 text-center">
+      <h2> <i class="fa fa-book" aria-hidden="true"></i></h2>
+      <h4> LEARN WITH PURPOSE</h4>
+    </div>
+    <div class="col-3 text-center">
+      <h2> <i class="fa fa-leaf" aria-hidden="true"></i></h2>
+      <h4> GROW WITH PURPOSE</h4>
+    </div>
+    <div class="col-3 text-center">
+      <h2> <i class="fa fa-paint-brush" aria-hidden="true"></i></h2>
+      <h4> CREATE WITH PURPOSE</h4>
+    </div>
+    <div class="col-3 text-center">
+      <h2> <i class="fa fa-share-alt-square" aria-hidden="true"></i></h2>
+      <h4> SHARE WITH PURPOSE</h4>
     </div>
   </div>
+  <br>
+  <!--  Second Block-->
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h2 style="font-family:verdana; font-size:50px;"><b>Identify training needs </b>& increase engagement</h2>
+      <br>
+      <h3><b>Entreprelearners</b> helps your company identify every employee's <b>TRUE</b> needs/ boost skills, increase engagement in learning & growing and have the <b>desired impact</b></h3>
+      <br>
+      <a href="https://bookme.name/jamesbasha/lite/conversation" class="btn btn-lg btn-outline-warning"><i class="fa fa-desktop" aria-hidden="true"></i> Book A Demo</a>
+    </div>
+    <div class="col-4">
+      <img src="/media/img_22.png" class="img-thumbnail">
+    </div>
+    <div class="col-2"></div>
+  </div>
+  <br>
+  <!--  Second Page Break-->
+  <div class="row bg-light container-fluid text-center p-3">
+    <h1 class="text-warning" style="font-family:Tahoma ; font-size:50px;"><b>Training Needs Assessment</b></h1>
+    <div class="col-3 text-center">
+      <h2> <i class="fa fa-list-alt" aria-hidden="true"></i></h2>
+      <h4> Identify Boost Skills/Needs</h4>
+    </div>
+    <div class="col-3 text-center">
+      <h2> <i class="fa fa-map" aria-hidden="true"></i></h2>
+      <h4> Design Growth Roadmap</h4>
+    </div>
+    <div class="col-3 text-center">
+      <h2> <i class="fa fa-male" aria-hidden="true"></i></h2>
+      <h4> Prepare Personalised Training</h4>
+    </div>
+    <div class="col-3 text-center">
+      <h2> <i class="fa fa-balance-scale" aria-hidden="true"></i></h2>
+      <h4> Have an Impact</h4>
+    </div>
+  </div>
+  <br>
+
+  <!--  Third Block-->
+  <div class="row">
+    <div class="col-2">
+    </div>
+    <div class="col-4">
+      <img src="/media/img_33.png" width="500" height="500" class="img-thumbnail">
+    </div>
+    <div class="col-5">
+      <h2 style="font-family:Tahoma ; font-size:50px;"><b>ASSESS THE STATE OF</b></h2>
+      <h2 style="font-family:Garamond  ; font-size:50px;">Organisation Vs Workforce Skills Gap</h2>
+      <h3 style="font-family:Arial  ; font-size:25px;"><b>Entreprelearners</b> helps your organization identify and define the TOP SKILLS that matter the most to make the purpose of the company become a reality and discover the skills gap between the organisation and employees</h3>
+      <br>
+      <a href="" class="btn btn-lg btn-outline-warning"><i class="fa fa-search" aria-hidden="true"></i> FIND OUT HOW</a>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <br>
+
+  <!--  Third Page Break-->
+  <div class="row bg-light container-fluid text-center p-4">
+    <h1 class="text-warning">Skill Gap Analysis</h1>
+    <div class="col-3 text-center">
+      <h2> <i class="fa fa-tree" aria-hidden="true"></i></h2>
+      <h4> Define the organisation's skill needed to grow</h4>
+    </div>
+    <div class="col-3 text-center">
+      <h2> <i class="fa fa-map-marker" aria-hidden="true"></i></h2>
+      <h4> Discover Workforce Competency</h4>
+    </div>
+    <div class="col-3 text-center">
+      <h2> <i class="fa fa-database" aria-hidden="true"></i></h2>
+      <h4> Collect Data</h4>
+    </div>
+    <div class="col-3 text-center">
+      <h2> <i class="fa fa-link" aria-hidden="true"></i></h2>
+      <h4> Bridge the Gap</h4>
+    </div>
+  </div>
+  <br>
+
+  <!--  Fourth Block-->
+  <div class="row">
+    <div class="col-1">
+    </div>
+    <div class="col-5">
+      <h1 style="font-family:Tahoma ; font-size:50px;"><b>Purpose-driven companies need</b></h1>
+      <h2 style="font-family:Courier New ; font-size:50px;">Purpose-driven Employees</h2>
+      <h5 style="font-family:Garamond  ; font-size:30px;">For the companies to be Purpose-driven they need to hire & grow purpose-driven employees & collaborate with purpose-driven stakeholders</h5>
+      <br>
+      <a href="" class="btn btn-lg btn-outline-warning"><i class="fa fa-briefcase" aria-hidden="true"></i> HOW TO BECOME ONE</a>
+    </div>
+    <div class="col-4">
+      <img src="/media/img_44.png" width="700" height="700" class="img-thumbnail">
+    </div>
+    <div class="col-2"></div>
+  </div>
+  <br>
+  <!--  Fourth Page Break-->
+  <div class="row bg-light container-fluid text-center">
+    <div class="col-3 text-center">
+      <h2> <i class="fa fa-list" aria-hidden="true"></i></h2>
+      <h4> Hire with Purpose</h4>
+    </div>
+    <div class="col-3 text-center">
+      <h2> <i class="fa fa-arrows-alt" aria-hidden="true"></i></h2>
+      <h4> Onboard with Purpose</h4>
+    </div>
+    <div class="col-3 text-center">
+      <h2> <i class="fa fa-signal" aria-hidden="true"></i></h2>
+      <h4> Grow with Purpose</h4>
+    </div>
+    <div class="col-3 text-center">
+      <h2> <i class="fa fa-bicycle" aria-hidden="true"></i></h2>
+      <h4> Offboard with Purpose</h4>
+    </div>
+  </div>
+  <br>
+
+  <!--  Fifth Block-->
+  <div class="row">
+    <div class="col-2">
+    </div>
+    <div class="col-4">
+      <img src="/media/img_55.png" width="700" height="700" class="img-thumbnail">
+    </div>
+    <div class="col-5">
+      <h1 style="font-size:60px;"><b>UPSKILL & RESKILL</b></h1>
+      <h2><b>EMPLOYEES</b></h2>
+      <h1 style="font-size:60px;">WITH PURPOSE</h1>
+      <h5 style="font-family:Garamond  ; font-size:30px;"><b>Entreprelearners</b> helps your workforce get prepared for the present and the future by helping them identify the most important skills needed in the current environment and offering them 100% personalised training and resources.</h5>
+      <br>
+      <a href="" class="btn btn-lg btn-outline-warning"><i class="fa fa-coffee" aria-hidden="true"></i> FIND OUT MORE</a>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <br>
+  <!--  Fifth Page Break-->
+  <div class="row bg-light container-fluid text-center">
+    <div class="col-3 text-center">
+      <h2> <i class="fa fa-pencil" aria-hidden="true"></i></h2>
+      <h4> Craft your Purpose</h4>
+    </div>
+    <div class="col-3 text-center">
+      <h2> <i class="fa fa-list-ol" aria-hidden="true"></i></h2>
+      <h4> Find your top boost skills</h4>
+    </div>
+    <div class="col-3 text-center">
+      <h2> <i class="fa fa-headphones" aria-hidden="true"></i></h2>
+      <h4> Design your Personal Growth Plan</h4>
+    </div>
+    <div class="col-3 text-center">
+      <h2> <i class="fa fa-history" aria-hidden="true"></i></h2>
+      <h4> 100% personalised training & resources</h4>
+    </div>
+  </div>
+  <br>
 </div>
-</body>
-</html>
+{% endblock content %}
