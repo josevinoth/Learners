@@ -28,9 +28,13 @@ def login_page(request):
             request.session['first_name'] = first_name
             if user is not None:
                 login(request,user)
-                return redirect('home_page')
+                user_count = User.objects.filter(is_active=False).count()
+                print('user_count', user_count)
+                context = {'user_count': user_count}
+                # return redirect('home_page',context)
+                return render(request, "learners_app/home_page.html", context)
+
             else:
                 messages.error(request,'Username Or Password is Incorrect')
-
     context = {}
     return render(request, "learners_app/login.html", context)

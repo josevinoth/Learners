@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import status_info,roles_info
 
-# Register your models here.
+admin.site.register(status_info)
+admin.site.register(roles_info)
+

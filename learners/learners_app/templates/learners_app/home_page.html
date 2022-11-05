@@ -3,6 +3,8 @@
 {% block content %}
 <div class="row bg-warning">
     <h1>Home Page</h1>
+ <a href="{% url 'user_list_temp' %}"><i class="fa fa-arrow-right" aria-hidden="true"></i> User List <span class="badge bg-secondary"> {{user_count}}</span></a>
+
 </div>
 
 {% endblock content %}

@@ -1,6 +1,5 @@
 from django.shortcuts import render, redirect
 from ..forms import CreateUserForm,UserextForm
-# from ..forms import CreateUserForm
 from django.contrib import messages
 
 def registration_page(request):
@@ -11,7 +10,6 @@ def registration_page(request):
         user_ext_form=UserextForm(request.POST)
         if form.is_valid() and user_ext_form.is_valid():
             print("Form Is Valid")
-        # if form.is_valid():
             user= form.save()
             user_ext= user_ext_form.save(commit=False)
             user_ext.user=user

@@ -13,4 +13,4 @@ class CreateUserForm(UserCreationForm):
 class UserextForm(forms.ModelForm):
     class Meta:
         model = User_extInfo
-        fields = ['emp_contact','emp_job_title','emp_no_of_employees','emp_interest','emp_free_text','emp_country']
+        fields = ['emp_contact','emp_job_title','emp_no_of_employees','emp_interest','emp_free_text','emp_country','emp_role','emp_status']

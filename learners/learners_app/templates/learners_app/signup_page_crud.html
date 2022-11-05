@@ -31,37 +31,36 @@
           {% render_field form.email class="form-control" type="text"  placeholder="Work email" %}
         </div>
         <div class="input-group input-group-lg mb-3">
-          {% render_field user_ext_form.emp_country class="form-control" type="text"  placeholder="Country" %}
+          {% render_field user_ext_edit_form.emp_country class="form-control" type="text"  placeholder="Country" %}
         </div>
         <div class="input-group input-group-lg mb-3">
-          {% render_field form.password1 class="form-control" type="password"  placeholder="Password" %}
+          {% render_field form.password class="form-control" type="password"  placeholder="Password" %}
         </div>
-        <div class="input-group input-group-lg mb-3">
-          {% render_field form.password2 class="form-control" type="password"  placeholder="Confirm Password" %}
-        </div>
-        <button type="submit" class="btn btn-lg btn-success "><i class="fas fa-check"></i> Register</button>
+        <button type="submit" class="btn btn-lg btn-success "><i class="fas fa-check"></i> Update</button>
+<!--        <a href="{% url 'first_page' %}" class="btn btn-lg btn-danger float-right">-->
+<!--          <i class="fa fa-arrow-left" aria-hidden="true"></i> Back   </a>-->
       </div>
       <div class="col-3">
         <div class="input-group input-group-lg mb-3">
-          {% render_field user_ext_form.emp_contact class="form-control" type="text"  placeholder="Phone Number" %}
+          {% render_field user_ext_edit_form.emp_contact class="form-control" type="text"  placeholder="Phone Number" %}
         </div>
         <div class="input-group input-group-lg mb-3">
-          {% render_field user_ext_form.emp_job_title class="form-control" type="text"  placeholder="Job Title" %}
+          {% render_field user_ext_edit_form.emp_job_title class="form-control" type="text"  placeholder="Job Title" %}
         </div>
         <div class="input-group input-group-lg mb-3">
-          {% render_field user_ext_form.emp_interest class="form-control" type="text"  placeholder="Choose Your Interest" %}
+          {% render_field user_ext_edit_form.emp_interest class="form-control" type="text"  placeholder="Choose Your Interest" %}
         </div>
         <div class="input-group input-group-lg mb-3">
-          {% render_field user_ext_form.emp_no_of_employees class="form-control" type="text"  placeholder="Number Of Employees" %}
+          {% render_field user_ext_edit_form.emp_no_of_employees class="form-control" type="text"  placeholder="Number Of Employees" %}
         </div>
         <div class="input-group input-group-lg mb-3">
-          {% render_field user_ext_form.emp_free_text class="form-control" type="text"  placeholder="How are you looking to use Entreprelearners?" %}
+          {% render_field user_ext_edit_form.emp_free_text class="form-control" type="text"  placeholder="How are you looking to use Entreprelearners?" %}
         </div>
         <div class="input-group input-group-lg mb-3">
-          {% render_field user_ext_form.emp_status class="form-control" hidden="True"%}
+          {% render_field user_ext_edit_form.emp_status class="form-control" %}
         </div>
         <div class="input-group input-group-lg mb-3">
-          {% render_field user_ext_form.emp_role class="form-control" hidden="True"%}
+          {% render_field user_ext_edit_form.emp_role class="form-control" %}
         </div>
       </div>
     </div>
